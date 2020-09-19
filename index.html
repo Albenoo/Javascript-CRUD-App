@@ -25,14 +25,15 @@
 <div class="parent">
 	<div id="header">
 		<div id="row">
-		 <span    class="best"
-         <i class="fas fa-bars"></i></span>
-      <div class="logo">Dashboard</div>
-      <span id="toggle" onclick="toggler()"
-      class="logo1">
-         <i class="fas fa-bars"></i></span>
+	
+      <div class="logo">Dashboard  	 <span    class="best">
+         <i class="fas fa-bars"></i></span></div>
+     
 	 <div class="form"> <input type="text" class="inp" placeholder="Search everything">
 	 <i class="fas fa-search"></i>
+	  <span id="toggle" onclick="toggler()"
+      class="logo1">
+         <i class="fas fa-bars"></i></span>
 
 
 	 </div>
@@ -45,12 +46,17 @@
 </div>
     <div class="parent-row">
       <h1>Add a new Post </h1>
-			<div>
-				<label for="text">Write Post Text</label>
+			<div class="bxs">
+				<label for="text">Write Post Title</label>
 			<input type="text" class="put">
+							<label for="area">Write Post Description</label>
+
+			<textarea placeholder="Write Description of Post" class="area"></textarea>
+										<label for="area">Add an Image</label>
+
 		    <input type="file" name="filename" title=" " id="file">
 
-			<button class="add" onclick="test();">Add a Post</button>
+			<button class="add" onclick="test();">Add a Postttsss</button>
 						<button class="remove">Remove a Post</button>
 			</div>
 			<ul class="menu">

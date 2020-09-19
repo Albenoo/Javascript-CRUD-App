@@ -115,7 +115,7 @@ padding: 5px 0;
 }
 .best {
 	display:none;
-	color: black;
+	color: red;
 }
 
 .first .row {
@@ -169,10 +169,23 @@ padding: 5px 0;
 
 }
 .put {
-	padding: 10px 20px;
+	padding: 15px 37px;
 	border: none;
 	color: black;
+		margin: 20px;
 
+
+}
+
+.lead {
+	align-self: flex-start;
+	text-align: left;
+	font-size: 15px;
+	color: gray;
+}
+
+label {
+	font-weight: normal;
 }
 
 .parent-row {
@@ -186,6 +199,7 @@ padding: 5px 0;
 	flex-wrap: wrap;
 }
 #file {
+	margin: 20px 0;
 
 }
 li {
@@ -197,6 +211,7 @@ li {
 	padding: 10px 20px;
 	border: none;
 	color: white;
+	margin: 10px;
 }
 
 .remove {
@@ -204,21 +219,46 @@ li {
 	padding: 10px 20px;
 	border: none;
 	color: white;
+		margin: 10px;
+
 }
 .parent-box {
 	width:600px;
-	margin:10px;
+	padding: 10px 0;
 	min-height: 300px;
 	display: flex;
 	margin:20px;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	background-color: white;
 }
+.gbt {
+	display: flex;
+	flex-direction: column;
+}
+.text {
+	color:black;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Open Sans',sans-serif;
+}
+.area {
+	margin: 20px 0;
+	padding: 40px 40px;
+	border: none;
+	resize: none;
+	color: black;
 
-
+}
+.bxs {
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
 @media (max-width:700px) {
 
   #header {
@@ -238,7 +278,7 @@ li {
   }
 .best {
 	display:flex;
-	color: black;
+	color: red;
 }
   #row {
     display: none;
