@@ -1,0 +1,289 @@
+body {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Montserrat',sans-serif;
+  text-align: center;
+}
+
+
+.logo {
+  color: black;
+  font-weight: bold;
+  width: 300px;
+	background-color: transparent;
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.logo1 {
+  color: red;
+  font-weight: bold;
+  padding: 20px;
+  display: none;
+}
+
+
+#header {
+  width: 100%;
+  min-height: 80px;
+    background-color: white;;
+padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#row {
+	width:100%;
+	display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+	flex-wrap: wrap;
+  min-height: 80px;
+}
+
+.form {
+	width: 300px;
+	background-color: transparent;
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.inp {
+	width: 100%;
+	min-height: 40px;
+	border: none;
+	background-color: whitesmoke;
+}
+
+.form i {
+	background-color: transparent;
+	color:#121212;
+	margin-left: -40px;
+	padding: 11px;
+}
+
+.user {
+	width: 300px;
+	background-color: transparent;
+	min-height: 50px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	vertical-align: middle;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.user .profile {
+	color:black;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.user i {
+	padding:15px 15px;
+	background-color: #025FC2;
+	 font-size: 15px;
+	 color: white;
+	 border-radius: 500px;
+	 margin: 0 10px;
+}
+
+
+ .first {
+    width: 250px;
+    min-height:90vh;
+    background-color: #232324;
+    display: flex;
+    align-items: center;
+      transition: 0.3s;
+    justify-content: flex-start;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.best {
+	display:none;
+	color: black;
+}
+
+.first .row {
+    width: 100%;
+    min-height: 500px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.first li {
+    padding: 10px;
+    list-style: none;
+    color: white;
+}
+
+.first li a {
+    color: white;
+    text-decoration: none;
+}
+
+.parent {
+    width: 100%;
+    display: flex;
+    background-color: #F6F6F6;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height:80vh;
+}
+
+.subrow {
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	min-height: 80vh;
+}
+
+.sub {
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	min-height:100vh;
+	justify-content: center;
+	
+
+}
+.put {
+	padding: 10px 20px;
+	border: none;
+	color: black;
+
+}
+
+.parent-row {
+	width:100%;
+	min-height: 720px;
+	display: flex;
+	align-items: center;
+		flex-direction: column;
+
+	justify-content: center;
+	flex-wrap: wrap;
+}
+#file {
+
+}
+li {
+	list-style-type: none;
+}
+
+.add  {
+	background-color:#025FC2;
+	padding: 10px 20px;
+	border: none;
+	color: white;
+}
+
+.remove {
+		background-color:#025FC2;
+	padding: 10px 20px;
+	border: none;
+	color: white;
+}
+.parent-box {
+	width:600px;
+	margin:10px;
+	min-height: 300px;
+	display: flex;
+	margin:20px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: white;
+}
+
+
+@media (max-width:700px) {
+
+  #header {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .logo {
+    padding: 25px;
+  }
+
+  .logo1 {
+    display: flex;
+  }
+.best {
+	display:flex;
+	color: black;
+}
+  #row {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+    margin: 5px 0;
+  }
+
+  #nav li {
+    padding: 20px;
+  }
+  .parent {
+	  width:100%;
+  }
+
+.first {
+    width: 0;
+    min-height:0px;
+    background-color: #0c62fb;
+    display: flex;
+    opacity: 0;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.first .row {
+    width: 100%;
+    min-height: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+
+}
