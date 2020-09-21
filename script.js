@@ -34,7 +34,7 @@ mens.addEventListener("click", function() {
 const add = document.querySelector(".add");
 const remove = document.querySelector(".remove");
 
-add.addEventListener("click", function () {
+add.addEventListener("click", function (test) {
   const cont = document.querySelector(".menu");
   const input = document.querySelector(".put");
 	  const output = document.querySelector(".area");
@@ -72,6 +72,14 @@ add.addEventListener("click", function () {
 
 		 	cont.append(parent);
 
+if(input.value == "" && output.value == "") {
+	let x =  document.createTextNode("Albenis Kerqeli");
+parent.appendChild(x);
+
+}
+else {
+	console.log("Albenis");
+}
 });
 
 remove.addEventListener("click", function () {

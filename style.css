@@ -3,7 +3,6 @@ body {
   margin: 0;
   text-decoration: none;
   font-family: 'Montserrat',sans-serif;
-  text-align: center;
 }
 
 
@@ -29,13 +28,14 @@ body {
 
 #header {
   width: 100%;
-  min-height: 80px;
+  min-height: 70px;
     background-color: white;;
-padding: 5px 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
   flex-wrap: wrap;
 }
 
@@ -60,11 +60,16 @@ padding: 5px 0;
 	flex-direction: row;
 }
 
+
 .inp {
 	width: 100%;
 	min-height: 40px;
 	border: none;
-	background-color: whitesmoke;
+	background-color: #F0F2F5;
+}
+
+.inp::placeholder {
+	padding: 0 20px;
 }
 
 .form i {
@@ -88,7 +93,8 @@ padding: 5px 0;
 
 .user .profile {
 	color:black;
-	font-weight: bold;
+	font-weight: normal;
+	font-family: 'Montserrat',sans-serif;
 	font-size: 16px;
 }
 
@@ -125,25 +131,44 @@ padding: 5px 0;
     background-color: transparent;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
 }
+
+.first .head {
+	color:white;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 80px;
+	background-color: #025FC2;
+}
 .first li {
-    padding: 10px;
     list-style: none;
+		padding: 25px 0;
+		width: 100%;
+		display: flex;
+
+		align-items: center;
+		justify-content: space-evenly;
+		border-bottom: 1px solid #675D5D;
+
     color: white;
 }
 
 .first li a {
     color: white;
+		font-size: 14px;
     text-decoration: none;
 }
 
 .parent {
     width: 100%;
     display: flex;
-    background-color: #F6F6F6;
+    background-color: #F0F2F5;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -170,14 +195,24 @@ padding: 5px 0;
 
 }
 .put {
-	padding: 15px 37px;
+	padding: 15px 80px;
 	border: none;
 	color: black;
 		margin: 20px;
-		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
 
 
+}
+
+.main {
+max-width: 100%;
+	background-color: none;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .lead {
@@ -188,21 +223,31 @@ padding: 5px 0;
 }
 
 label {
-	font-weight: normal;
+	font-weight: bold;
+	color:#025FC2;
+	font-family: 'Roboto',sans-serif;
+	font-size: 14px;
 }
 
 .parent-row {
 	width:100%;
-	min-height: 720px;
+	min-height: 580px;
 	display: flex;
 	align-items: center;
 		flex-direction: column;
-
+text-align: left!important;
 	justify-content: center;
 	flex-wrap: wrap;
 }
+.parent-row h1 {
+	padding:20px 0;
+	font-weight: normal;
+	text-align: right;
+	font-size: 25px;
+}
 #file {
-	margin: 20px 0;
+	align-self: flex-start;
+	margin: 10px 30px;
 
 }
 li {
@@ -210,22 +255,22 @@ li {
 }
 
 .add  {
-	background-color:#025FC2;
+	background:linear-gradient(100deg,#0070ba,#1546a0);
 	padding: 10px 20px;
 	border: none;
-	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
 	color: white;
 	margin: 10px;
 }
 
 .remove {
-		background-color:#025FC2;
+		background-color:white;
+		border: 2px solid #1546a0;
 	padding: 10px 20px;
-	border: none;
+	color: #025FC2;
 	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
-	color: white;
 		margin: 10px;
 
 }
@@ -255,13 +300,26 @@ li {
 }
 .area {
 	margin: 20px 0;
-	padding: 40px 40px;
+		padding: 80px 85px;
+
 	border: none;
 	resize: none;
 	color: black;
-	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
 
+}
+
+.label {
+	align-self: start;
+	margin: 5px 20px;
+	color:#025FC2;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+#toggle {
+	color: red;
 }
 .bxs {
 	min-height: 100px;
@@ -270,7 +328,7 @@ li {
 	flex-direction: column;
 	justify-content: center;
 }
-@media (max-width:700px) {
+@media (max-width:1100px) {
 
   #header {
 
@@ -286,10 +344,26 @@ li {
 
   .logo1 {
     display: flex;
+		color: black;
   }
 .best {
 	display:flex;
-	color: red;
+	color: black;
+	width:100%;
+	font-weight: normal;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+}
+.best i {
+	color: black;
+		font-size: 20px;
+
+}
+
+#toggle i {
+	color: black;
+	font-size: 20px;
 }
   #row {
     display: none;
